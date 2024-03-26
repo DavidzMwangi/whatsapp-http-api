@@ -183,3 +183,11 @@ If you want to support the project - you can either:
 2. Support [the project one time, every month or get access to telegram channel on Boosty](https://boosty.to/allburov)
 3. Looking for the personal support, have an important feature request for your business, need to develop a whatsapp bot? [Reach me out at Telegram](https://t.me/allburov)!
 
+
+# My Configurations
+
+```bash
+docker build  --no-cache -t devlikeapro/whatsapp-http-api .
+docker run -it --rm  -p 127.0.0.1:3000:3000/tcp --name whatsapp-http-api  devlikeapro/whatsapp-http-api
+
+```
