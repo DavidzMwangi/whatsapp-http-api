@@ -8,8 +8,8 @@ async function bootstrap() {
     const app = await NestFactory.create(AppModule, {
         logger: process.env.DEBUG != undefined ? ['log', 'debug', 'error', 'verbose', 'warn'] :
             ['log', 'error', 'warn'],
+      cors: true,
     });
-
     app.enableShutdownHooks();
     app.useGlobalFilters(new AllExceptionsFilter());
     const options = new DocumentBuilder()
