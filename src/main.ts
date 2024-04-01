@@ -32,6 +32,7 @@ async function bootstrap() {
   const [AppModule, SwaggerModule] = await loadModules();
   const app = await NestFactory.create(AppModule, {
     logger: getLogLevels(),
+    cors: true,
   });
 
   app.enableShutdownHooks();

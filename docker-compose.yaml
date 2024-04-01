@@ -29,7 +29,8 @@ services:
       - WHATSAPP_SWAGGER_USERNAME=admin
       - WHATSAPP_SWAGGER_PASSWORD=123
       - WHATSAPP_API_HOSTNAME=localhost
-    restart: always
+      - WHATSAPP_PROXY_SERVER=localhost:5000
+#    restart: always
 
   mongodb:
     image: mongo

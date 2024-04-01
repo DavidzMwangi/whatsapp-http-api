@@ -204,3 +204,10 @@ curl -d "{\"chatId\": \"${PHONE}@c.us\", \"text\": \"Hello from WhatsApp HTTP AP
 ## What is next?
 [Go and read the full documentation!](https://waha.devlike.pro/docs/overview/introduction/)
 
+
+my configs
+
+```running local setup of docker
+docker build  --no-cache -t devlikeapro/whatsapp-http-api .
+```
+
